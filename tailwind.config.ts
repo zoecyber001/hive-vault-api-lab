@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				hive: {
+					DEFAULT: '#FFB800',
+					dark: '#121212',
+					light: '#FFDB80',
+					accent: '#FF9800',
+					danger: '#FF4500',
+					success: '#4CAF50'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,51 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				typing: {
+					'0%': {
+						width: '0'
+					},
+					'100%': {
+						width: '100%'
+					}
+				},
+				blink: {
+					'50%': {
+						borderColor: 'transparent'
+					}
+				},
+				glitch: {
+					'0%': {
+						transform: 'translate(0)'
+					},
+					'20%': {
+						transform: 'translate(-2px, 2px)'
+					},
+					'40%': {
+						transform: 'translate(-2px, -2px)'
+					},
+					'60%': {
+						transform: 'translate(2px, 2px)'
+					},
+					'80%': {
+						transform: 'translate(2px, -2px)'
+					},
+					'100%': {
+						transform: 'translate(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'typing': 'typing 3.5s steps(40, end)',
+				'cursor-blink': 'blink 1s step-end infinite',
+				'glitch': 'glitch 0.5s ease infinite'
+			},
+			fontFamily: {
+				mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
+				sans: ['Inter', 'system-ui', 'sans-serif']
 			}
 		}
 	},

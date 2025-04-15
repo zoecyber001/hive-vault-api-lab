@@ -19,8 +19,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Index />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Index />} />
           <Route path="/api-docs" element={<ApiDocs />} />
           <Route path="/challenges" element={<Challenges />} />
           {/* Redirect root to login */}
